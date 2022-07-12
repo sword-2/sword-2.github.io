@@ -1,3 +1,3 @@
 # readme
 
-Learning to use [GitHub pages](https://sword-2.github.io).
+This is learning to apply [GitHub pages](https://sword-2.github.io).
