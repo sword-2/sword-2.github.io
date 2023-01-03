@@ -1,7 +1,3 @@
----
-title: line to Trigger Jekyll
----
-
 # C/C++ memory safety
 
 Caesar was once concerned about [C/C++ not being memory safe](https://media.defense.gov/2022/Nov/10/2003112742/-1/-1/0/CSI_SOFTWARE_MEMORY_SAFETY.PDF). Also, Caesar was encouraging programming languages with more memory safety with swift being one of the newer ones. Swift was investigated for this reason.
