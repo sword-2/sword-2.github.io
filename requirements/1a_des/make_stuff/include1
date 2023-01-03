@@ -1,0 +1,10 @@
+#An include with definitions for variables to help generate documents
+
+#table of content
+toc_relative=make_stuff/toc_relative
+toc_big_file=make_stuff/toc_big_file
+
+#Output file - typically uses one of the tables of contents above
+Ofile=o_des.html #large single file when relative links don't work (i.e. Android content provider)
+Ofile_rel=o_des_rel.html #when relative links work
+Ofile_dirs='../o_des.html' #different relative dir when make is in a subdir

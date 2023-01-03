@@ -1,0 +1,34 @@
+<h3 id=1c>Agreements</h3>
+
+No discussions or agreements were actually coordinated. But table c1 was made up just to start some content.
+
+<table border=1 id=c>
+	<caption>Table c1 - agreement(s)</caption>
+	<tr><th>Organization</th><th>agreement(s)</th></tr>
+
+	<tr><td>Wikipedia</td><td>Maintain internet server to host some operator documents on the internet for <a href="https://en.m.wikipedia.org/wiki/The_SWORD_Project">The SWORD Project</a> and the <a href="https://wiki.crosswire.org/Main_Page">CrossWire Developers' wiki</a>.</td></tr>
+
+	<tr><td>Crosswire bible society</td>
+		<td>
+		<ul>
+			<li>maintain SWORD engine(s) and documents common to multiple software pieces</li>
+		</ul>
+		</td></tr>
+	
+	<tr><td>Each front-end</td><td>-</td></tr>
+
+	<tr><td>Free Software Foundation</td><td>Maintain currency of the listing for <a href="https://directory.fsf.org/wiki/The_SWORD_Project">The SWORD Project in the Free Software Directory</a></td></tr>
+
+	<tr><td>Christian organizations / churches</td><td>report feedback on a modules if a miss-interpretation of scripture is encountered (pending a feedback system). Report difficulty or limitation when operating app. Consider checking with local pastor to verify an issue before sending.</td></tr>
+
+	<tr><td>Operators/Users</td><td>Monitor the installed program that it keeps running on your device.</td></tr>
+
+	<tr><td>Publishers</td><td>If and when it becomes acceptable, allow the SWORD project to secure permission to publish the bible materials.</td></tr>
+
+	<tr><td>Microsoft, Google, Apple Inc.</td><td>Continue to maintain cloud storage systems and open source programming languages and tools to help the SWORD project continue on.</td></tr>
+
+</table>
+
+<!--
+	<tr><td>Open Doors USA</td><td>Maintain <a href="https://www.opendoorsusa.org/christian-persecution/world-watch-list/">world watch list>/a> for the top 50 countries where its most difficult to follow Jesus.</td></tr>
+-->

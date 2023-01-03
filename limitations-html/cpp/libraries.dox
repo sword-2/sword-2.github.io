@@ -1,0 +1,2 @@
+
+The g++ tool is cool, but its linking was understood to be only for local libraries. Given the swift package manager (SPM) can pull libraries locally or from the internet, the g++ tool is limited in comparison.

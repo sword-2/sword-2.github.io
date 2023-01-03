@@ -1,0 +1,19 @@
+The architecture is a significant for developers and maintainers, but less so for the operator, except when it affects the operation.
+
+<!--
+website: https://acqnotes.com/acqnote/tasks/architecting-overview
+
+There are a number of types of architectures
+	Functional
+	Physical
+	Reference
+	Enterprise
+
+6 steps that make up the design process
+	1. Determine the intended use of the architecture
+	2. Determine the scope of the architecture
+	3. Determine Data Reqired to Support Architecture Development
+	4. Collect, Organize, correlate, and Store Architectural Data
+	5. Conduct Analyses in Support of Architecture Objectives
+	6. Document results in Accordance with Decision-Maker Needs
+-->

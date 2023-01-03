@@ -1,0 +1,37 @@
+<h3 id=1d>Environment the system will run</h3>
+
+<p>Table d1 is an outline of some device environments (not complete).</p>
+
+
+<table border=1>
+<caption>Table d1 - electronic devices</caption>
+<tr>
+	<th>Software environment(s)</th>
+	<th>technologies</th>
+	<th>Comments</th>
+</tr>
+	<td>Linux-console only</td>
+	<td>frame-buffer, DRM</td>
+	<td>-</td>
+</tr>
+</tr>
+	<td>Web browser (except console browsers)</td>
+	<td>canvas element</td>
+	<td>-</td>
+</tr>
+</tr>
+	<td>Windows</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+</tr>
+	<td>Apple</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+</tr>
+	<td>Android</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+</table>
