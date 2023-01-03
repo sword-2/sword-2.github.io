@@ -24,8 +24,8 @@ Many times, but not always, code was adapted from posts other's had on the inter
 ## Limitations
 
 Perceived limitations follows ...
-- [Memory safety concern and investigation for C/C++](https://sword-2.github.io/limitations-html/cpp_segv_handler/readme.md).
-- [swift document compiler (docc)](https://sword-2.github.io/limitations-html/swift/docc.md).
+- [Memory safety concern and investigation for C/C++](https://sword-2.github.io/limitations-html/cpp_segv_handler/index.html).
+- [swift document compiler (docc)](https://sword-2.github.io/limitations-html/swift/docc.html).
 
 
 ### doxygen
