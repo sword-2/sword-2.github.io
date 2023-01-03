@@ -22,27 +22,8 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "The SWORD Project", "index.html", [
-    [ "mainpage - personal learning", "index.html", "index" ],
-    [ "limitations", "../../../limitations/00.dox", null ],
-    [ "\"Limitations\"", "limitations.html", null ],
-    [ "\"lim1\"", "lim1.html", null ],
-    [ "\"directories not otherwise in doxygen\"", "dirs_other.html", null ],
-    [ "Modules", "modules.html", "modules" ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
-    ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
-      ] ]
-    ] ]
+  [ "Personal notes on The SWORD Project [C/C++]", "index.html", [
+    [ "limitations", "../../../limitations/00.dox", null ]
   ] ]
 ];
 

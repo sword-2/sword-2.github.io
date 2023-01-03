@@ -1,10 +1,16 @@
 # README
 
-## Why the project is useful? personal use. It might become a lesson learned good or bad in the future. 
+## Why the project is useful? personal use.
 
-## What can be done with the project. n/a
+It might become a lesson learned good or bad in the future. 
 
-## How can the project be used? n/a
+## What can be done with the project.
+
+n/a
+
+## How can the project be used?
+
+n/a
 
 ## Comments
 
