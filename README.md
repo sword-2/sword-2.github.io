@@ -24,16 +24,7 @@ Many times, but not always, code was adapted from posts other's had on the inter
 ## Limitations
 
 Perceived limitations follows ...
-- [Memory safety concern and investigation for C/C++](https://sword-2.github.io/limitations-html/cpp_segv_handler/index.html).
-- [swift document compiler (docc)](https://sword-2.github.io/limitations-html/swift/docc.html).
-
-
-### doxygen
-The Doxyfile INPUT tag depends on an environment variable called SWORDPATH. One was pre-loaded in the shell's .profile as shown in the line(s) of code below.
-	SWORDPATH=/home2/usr/local/bible; export SWORDPATH
-A common path like /home/usr/local or another path can work. The /home2 path was just a different partition and out of scope.
-
-The Doxyfile originally from the SWORD trunk was updated to remove obsolete tags relative to a newer version doxygen version operated in 2022. An experiment was done to make standalone .dox files including a mainpage.dox to see if it could replace the \mainpage content formerly in include/swmgr.h. 
-
+- [Memory safety concern and investigation for C/C++](https://sword-2.github.io/added-html/cpp_segv_handler/index.html).
+- [swift document compiler (docc)](https://sword-2.github.io/added-html/swift/docc.html).
 
 

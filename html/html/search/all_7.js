@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['publisher_2ehtml_15',['Publisher.html',['../Publisher_8html.html',1,'']]]
+  ['libraries_2edox_19',['libraries.dox',['../libraries_8dox.html',1,'']]],
+  ['line_20',['line',['../doxygen_8dox.html#a0b654bdd9ce22900d39ed4bf4520ec28',1,'doxygen.dox']]]
 ];
