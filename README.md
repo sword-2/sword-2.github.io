@@ -16,10 +16,13 @@ n/a
 
 The repo's are just personal notes. Nothing represents The [SWORD project](https://crosswire.org/svn/sword/trunk). The programming skills and abilities of past and current SWORD programmers exceed this repo. Also, the pastor was not consulted to verify everything is correct.
 
-Many times, but not always, code was adapted from posts other's had on the internet whether a blog, stackoverflow, Apple forum, etc. Usually code was modified a little or combined with other code scraps from another blog. Attempts to start some documents included ...
+Many times, but not always, code was adapted from posts other's had on the internet whether a blog, stackoverflow, Apple forum, etc. Attempts to start some documents included ...
 
+Software documentation. doxygen had been run for C/C++ but not yet successfully for swift. Maybe the swift keywords were different than C/C++ and something happened? swift-docc example code was run to experiment if it will load to github pages.
 - doxygen [link](https://sword-2.github.io/html/html/index.html).
-- docc [link](https://sword-2.github.io/docc/rpt/index.html)
+- swift-docc attempt [link](https://sword-2.github.io/docc/rpt/index.html)
+
+
 - incomplete draft of [requirements](https://sword-2.github.io/requirements/1a_des/o_des_rel.html).
 
 ## Limitations
