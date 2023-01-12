@@ -24,8 +24,6 @@ var NAVTREE =
 [
   [ "Personal notes on The SWORD Project [C/C++]", "index.html", [
     [ "mainpage - personal notes", "index.html", "index" ],
-    [ "\"directories not otherwise in doxygen\"", "dirs_other.html", null ],
-    [ "Test", "test.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
@@ -34,13 +32,9 @@ var NAVTREE =
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ]
     ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ]
-      ] ]
+    [ "File Members", "globals.html", [
+      [ "All", "globals.html", null ],
+      [ "Functions", "globals_func.html", null ]
     ] ]
   ] ]
 ];

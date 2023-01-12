@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['global_20integer_20variables_61',['Global integer variables',['../group__IntVariables.html',1,'']]],
-  ['global_20variables_62',['Global variables',['../group__variables.html',1,'']]]
+  ['human_20language_20_28english_29_20topics_34',['human language (English) topics',['../group__English.html',1,'']]]
 ];
