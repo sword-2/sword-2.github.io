@@ -22,7 +22,6 @@ Attempts to start some documents included ...
 
 - doxygen [link](https://sword-2.github.io/html/html/index.html).
 - swift-docc [link](https://sword-2.github.io/swift/documentation/diatheke)
-- incomplete draft of [requirements](https://sword-2.github.io/requirements/1a_des/o_des_rel.html).
 
 ## Perceived Limitations
 
