@@ -16,7 +16,7 @@ n/a
 
 Nothing represents The [SWORD project](https://crosswire.org/svn/sword/trunk). The programming skills and abilities of past and current SWORD programmers exceed this repo. Also, the pastor was not consulted to verify content.
 
-Many times, but not always, code was adapted from other's posts. 
+Many times, but not always, code was adapted from other's posts. Also, personal notes means more errors/typos, since nothing was checked with church staff.
 
 Attempts to start some documents included ...
 
@@ -27,5 +27,3 @@ Attempts to start some documents included ...
 
 - [Memory safety concern and investigation for C/C++](https://sword-2.github.io/added-html/cpp_segv_handler/index.html).
 - [swift document compiler (docc)](https://sword-2.github.io/added-html/swift/docc.html).
-
-
