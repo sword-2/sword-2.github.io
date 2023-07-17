@@ -2,29 +2,15 @@
 
 ## Why the project is useful? 
 
-personal use. It might become a lesson learned good or bad in the future. 
-
-## What can be done with the project.
-
-n/a
-
-## How can the project be used?
-
-n/a
+personal use. One individual was trying to code an open source project. 
 
 ## Comments
 
-Nothing represents The [SWORD project](https://crosswire.org/svn/sword/trunk). The programming skills and abilities of past and current SWORD programmers exceed this repo.
+Nothing represents The [SWORD project](https://crosswire.org/svn/sword/trunk). The individual making the page is only attempting pieces of code and is not capable of a whole functioning app.
 
-Many times, but not always, code was adapted from other's posts. Also, personal notes means more errors/typos, since nothing was checked with church staff.
+Many times, but not always, code was adapted from other's posts.
 
-Attempts to start some documents included ...
+Personal notes on making documents ...
 
 - doxygen [link](https://sword-2.github.io/html/html/index.html).
 - swift-docc [link](https://sword-2.github.io/swift/documentation/diatheke)
-
-## Perceived Limitations
-
-- [Memory safety concern and investigation for C/C++](https://sword-2.github.io/added-html/cpp_segv_handler/index.html).
-- [swift document compiler (docc)](https://sword-2.github.io/added-html/swift/docc.html).
-- [ftp server](https://sword-2.github.io/added-html/ftp/index.html).
