@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html><head>
+<title>AB495</title>
+<style>
+.church {
+background-color: green;
+}
+.Gov {
+background-color: blue;
+}
+.family {
+background-color: lightblue;
+}
+table, th, td {
+border: 1px solid;
+}
+canvas {
+border: 1px solid red;
+}
+.small {
+font-size: 50%;
+}
+</style><script>
+function ab495() { //AB=Assembly Bill
+
+var canvas = document.getElementById("ab495");
+var ctx = canvas.getContext("2d");
+
+//******************
+
+    // Set canvas resolution to match its CSS size
+    function resizeCanvas() {
+      //const rect = canvas.getBoundingClientRect();
+      	//canvas.width = rect.width;
+      	//canvas.height = rect.height; // Internal height in pixels
+      canvas.width = window.innerWidth;  // Internal width in pixels
+      canvas.height = window.innerHeight;
+	  
+	  // Internal height in pixels
+
+      // Example drawing
+      //context.fillStyle = 'blue';
+      //context.fillRect(0, 0, canvas.width, canvas.height);
+
+		ctx.font = "30px Arial";
+		ctx.fillText("God", canvas.width/2.15,canvas.height/6);
+	//circle definitions (ic) & outer circle (oc)
+		var radius=canvas.width/12; //was 200
+		//church
+			cx=canvas.width/6
+			cy=canvas.height*3/4
+			ctx.beginPath();
+			ctx.lineWidth=2;
+			ctx.arc(cx,cy,radius,0,2*Math.PI);
+			ctx.stroke();
+			ctx.fillText("church", cx-canvas.width/24,cy-40);
+			ctx.font = "20px Arial";
+			ctx.fillText("Matt 16:18-19", cx-60,cy+20);
+			//drawImage(image, dx, dy, dwidth, dheight)
+			var imageKey = new Image();
+         	imageKey.onload = () => {
+				ctx.drawImage(imageKey, canvas.width/6.5-10, cy-30, 30, 15);
+         	};
+         	imageKey.src = 'https://cdn.pixabay.com/photo/2016/03/31/17/50/brass-1293947_1280.png';
+		//Government
+			gx=canvas.width/2
+			gy=canvas.height*3/4
+			ctx.beginPath();
+			ctx.lineWidth=2;
+			ctx.arc(gx,gy,radius,0,2*Math.PI);
+			ctx.stroke();
+			ctx.font = "30px Arial";
+			ctx.fillText("Government", gx-canvas.width/12,gy-40);
+			ctx.font = "20px Arial";
+			ctx.fillText("Romans 13:4", gx-60,gy+20);
+			ctx.fillText("Genesis 9:6", gx-60,gy+40);
+			//Had to search the net for a while. It was assumed Government would appreciate an image with a "good" sword but not a "wimpy" sword, not a toy sword.
+			var imageSword = new Image();
+         	imageSword.onload = () => {
+				ctx.drawImage(imageSword, canvas.width/2.1, gy-30, 60, 30);
+         	};
+         	imageSword.src = 'https://cdn.pixabay.com/photo/2018/02/25/19/53/sword-3181584_1280.png';
+		//family
+			fx=canvas.width*5/6
+			fy=canvas.height*3/4
+			ctx.beginPath();
+			ctx.lineWidth=2;
+			ctx.arc(fx,fy,radius,0,2*Math.PI);
+			ctx.stroke();
+			ctx.font = "30px Arial";
+			ctx.fillText("family", fx-canvas.width/24,fy-40);
+			ctx.font = "20px Arial";
+			ctx.fillText("Pr 13:24", fx-40,fy+10);
+			ctx.fillText("1 Tim 3:4", fx-40,fy+30);
+			ctx.fillText("Eph 6:4", fx-40,fy+50);
+			ctx.fillText("Titus 2:5", fx-40,fy+70);
+
+			// Draw a filled rectangle
+    		ctx.fillStyle = 'brown'; // Set fill color
+    		ctx.fillRect(fx-30, fy-30, 50, 5); // x, y, width, height
+	
+		//Lines from God symbol to the 3 institution circles
+		ctx.lineWidth=1;
+		var xs=canvas.width/2; //x start
+		var ys=canvas.height/5.8; //y start
+
+		ctx.beginPath();
+		ctx.moveTo(xs, ys);
+		ctx.lineTo(cx, cy*0.75);
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.moveTo(xs, ys);
+		ctx.lineTo(gx, gy*0.75);
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.moveTo(xs, ys);
+		ctx.lineTo(fx, fy*0.75);
+		ctx.stroke();
+
+    }
+
+    // Initial resize
+    resizeCanvas();
+
+    // Optional: Resize dynamically on window resize
+    window.addEventListener('resize', resizeCanvas);
+}
+</script>
+
+</head><body>
+<h1><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB495">AB 495</a></h1><!-- comment about AB495 -->
+
+<p>This page has some comments about 
+<a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB495">Assembly Bill 495.</a><p>
+
+<h2 id="pu">Family institution's ability to pickup their child</h2>
+<p>Will parents who are already present and adequately raising their child be at risk of an unexpected person picking up their child?</p>
+
+
+<p class="two">Family was one of three institutions on earth along with Government and church according to the diagram below. Each of the institutions ideally has its leader. Would the bill dismantle the leader for a present family institution adequately taking care of their child?</p>
+
+The diagram was reconstructed from a <a href="https://www.faithtoyou.com/daniel-32830">video sermon</a> at time 00:22:00. The symbol identifying the church institution was a key, Government was a sword, and family a rod. Scriptures for the diagram were copied to table 1.</p>
+
+<p>No family code summary was observed in the <a href="https://govt.westlaw.com/calregs/Index?transitionType=Default&contextData=%28sc.Default%29">California Code of Regulations (CCR)</a> so the diagram seemed suitable to fill in. Family code did exist in the <a href="https://leginfo.legislature.ca.gov/faces/codes.xhtml">legislative codes</a>, just not observed in the CCR.</p>
+
+<br><br>
+
+<canvas id="ab495">
+Canvas not supported
+</canvas>
+<script>ab495();</script>
+
+<table class="one"><caption>Table 1 - Verses for diagram, Legacy Standard Bible</caption>
+<tr class="one">
+	<th>institution</th>
+	<th>Reference</th>
+	<th>Text</th>
+	</tr>
+<tr class="one">
+	<td class="church"><img src="https://cdn.pixabay.com/photo/2016/03/31/17/50/brass-1293947_1280.png"  style="border: none;" alt="key" border=3 height=10 width=30></img></td>
+	<td class="church">Matt 16:18-19</td>
+	<td class="church">And I also say to you that you are Peter, and upon this rock I will build My church; and the gates of Hades will not overpower it. 19 I will give you the keys of the kingdom of heaven; and whatever you bind on earth shall have been bound in heaven, and whatever you loose on earth shall have been loosed in heaven."
+	</td>
+	</tr>
+<tr class="one">
+	<td class="Gov"><img src="https://cdn.pixabay.com/photo/2018/02/25/19/53/sword-3181584_1280.png"  style="border: none;" alt="sword" border=3 height=20 width=40></img></td>
+	<td class="Gov">Romans 13:4</td>
+	<td class="Gov">for it is a minister of God to you for good. But if you do what is evil, be afraid; for it does not bear the sword in vain, for it is a minister of God, an avenger who brings wrath on the one who practices evil.</td>
+	</tr>
+<tr class="one">
+	<td class="Gov"><img src="https://cdn.pixabay.com/photo/2018/02/25/19/53/sword-3181584_1280.png" style="border: none;" alt="sword" border=3 height=20 width=40></img></td>
+	<td class="Gov">Genesis 9:6</td>
+	<td class="Gov">Whoever sheds man’s blood, By man his blood shall be shed, For in the image of God He made man.</td>
+	</tr>
+<tr class="one">
+	<td class="family"><img src="https://5.imimg.com/data5/SELLER/Default/2020/11/KZ/DO/MP/27463858/f88d372c-8c40-4d70-bcb5-5766533d22db-1-4afbdca2a0b82c68d15a1b8f2c00c10a-500x500.jpeg" style="border: none; "opacity: 0.5;" alt="rod" border=3 height=20 width=40></img></td>
+	<td class="family">Pr 13:24</td>
+	<td class="family">He who holds back his rod hates his son, But he who loves him disciplines him diligently.</td>
+	</tr>
+<tr class="one">
+	<td class="family"><img src="https://5.imimg.com/data5/SELLER/Default/2020/11/KZ/DO/MP/27463858/f88d372c-8c40-4d70-bcb5-5766533d22db-1-4afbdca2a0b82c68d15a1b8f2c00c10a-500x500.jpeg" style="border: none;" alt="rod" border=3 height=20 width=40></img></td>
+	<td class="family">1 Tim 3:4</td>
+	<td class="family">leading his own household well, having his children in submission with all dignity</td>
+	</tr>
+<tr class="one">
+	<td class="family"><img src="https://5.imimg.com/data5/SELLER/Default/2020/11/KZ/DO/MP/27463858/f88d372c-8c40-4d70-bcb5-5766533d22db-1-4afbdca2a0b82c68d15a1b8f2c00c10a-500x500.jpeg" style="border: none;" alt="rod" border=3 height=20 width=40></img></td>
+	<td class="family">Eph 6:4</td>
+	<td class="family">Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Lord.</td>
+	</tr>
+<tr class="one">
+	<td class="family"><img src="https://5.imimg.com/data5/SELLER/Default/2020/11/KZ/DO/MP/27463858/f88d372c-8c40-4d70-bcb5-5766533d22db-1-4afbdca2a0b82c68d15a1b8f2c00c10a-500x500.jpeg" style="border: none;" alt="rod" border=3 height=20 width=40></img></td>
+	<td class="family">Titus 2:5</td>
+	<td class="family">to be sensible, pure, workers at home, kind, being subject to their own husbands, so that the word of God will not be slandered.</td>
+	</tr>
+</table>
+
+
+<h2 id="existing">Existing codes</h2>
+By the code hierarchy in table 2, article 5.7 indicated the bill could respond to immigration situations. If a immigrant parent was going back to their home country, would California want to check if there was a family rule back in the home country? Assuming some home countries would want the child to stay with his/her parent, is that a good way to help the child receive care? 
+
+<table><caption>Table 2 - Bill target location in CA Education Code - EDC</caption>
+<tr>
+	<th>Titles and subtitles.</th>
+	<th>Name</th>
+	</tr>
+<tr>
+	<td>TITLE 1</td>
+	<td>GENERAL EDUCATION CODE PROVISIONS</td>
+	</tr>
+
+<tr>
+	<td>DIVISION 1</td>
+	<td>GENERAL EDUCATION CODE PROVISIONS</td>
+	</tr>
+
+<tr>
+	<td>PART 1</td>
+	<td>GENERAL PROVISIONS</td>
+	</tr>
+
+<tr>
+	<td>CHAPTER 2</td>
+	<td>Educational Equity</td>
+	</tr>
+
+<tr>
+	<td>ARTICLE 5.7</td>
+	<td>Pupil Protections Relating to Immigration and Citizenship Status</td>
+	</tr>
+</table>
+
+
+<p>The legislative family code already had division 8 for custody of children. If custody is under discussion, is this a good place for it? Section <a href="https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=FAM&division=8.&title=&part=1.&chapter=2.&article=">3012. (a)</a> already started codes for child custody proceedings in an Immigration situation.</p>
+
+</p>
+<h2 id="localChildServices">Local Child Services</h2>
+<p>Would local child support services have a harder time reporting? <a href="https://govt.westlaw.com/calregs/Document/I221532E85B6211EC9451000D3A7C4BC3?viewType=FullText&originationContext=documenttoc&transitionType=CategoryPageItem&contextData=(sc.Default)">22 CCR 121120 State Performance Measures</a> had a report for (7) Percent of children for whom paternity has been established. Is it more confusing who the parent is if the custody rules are changed, or family institution modified?</p>
+
+<table><caption>Table 2 - California Code of Regulations (CCR)</caption>
+<tr>
+	<th>Titles and subtitles.</th>
+	<th>Name</th>
+	</tr>
+<tr>
+	<td>Title 22</td>
+	<td>Social Security</td>
+	</tr>
+
+<tr>
+	<td>Division 13</td>
+	<td>Department of Child Support Services</td>
+	</tr>
+
+<tr>
+	<td>Chapter 11</td>
+	<td>Quality Control</td>
+	</tr>
+
+<tr>
+	<td>Article 1</td>
+	<td>Performance Measures</td>
+	</tr>
+
+
+</table>
+
+
+<h2 id="pw">Plain writing act</h2>
+
+<p>Are any other States planning a similar bill? Minimizing <a href="https://www.plainlanguage.gov/guidelines/design/minimize-cross-references/">cross-references</a> was encouraged for plain writing, and more consistent verbiage could prevent a lengthy table of cross-references to try and follow each unique bill, if that will occur.</p>
+
+
+</body></html>
