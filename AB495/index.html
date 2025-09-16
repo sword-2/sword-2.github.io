@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>AB495</title>
+<title>AB495 comments v2</title>
 <style>
 .church {
 background-color: green;
@@ -25,7 +25,7 @@ function ab495() { //AB=Assembly Bill
 
 var canvas = document.getElementById("ab495");
 var ctx = canvas.getContext("2d");
-
+var dim; //dimension of canvas square. length=width=dim
 //******************
 
     // Set canvas resolution to match its CSS size
@@ -33,8 +33,13 @@ var ctx = canvas.getContext("2d");
       //const rect = canvas.getBoundingClientRect();
       	//canvas.width = rect.width;
       	//canvas.height = rect.height; // Internal height in pixels
-      canvas.width = window.innerWidth;  // Internal width in pixels
-      canvas.height = window.innerHeight;
+		if (window.innerWidth < window.innerHeight) {
+			dim = window.innerWidth;
+		} else {
+      		dim = window.innerHeight;
+		}
+      	canvas.width = dim;  // Internal width in pixels
+      	canvas.height = dim;
 	  
 	  // Internal height in pixels
 
@@ -43,80 +48,81 @@ var ctx = canvas.getContext("2d");
       //context.fillRect(0, 0, canvas.width, canvas.height);
 
 		ctx.font = "30px Arial";
-		ctx.fillText("God", canvas.width/2.15,canvas.height/6);
+		ctx.fillText("God", dim/2-30,dim/6);
 	//circle definitions (ic) & outer circle (oc)
 		var radius=canvas.width/12; //was 200
 		//church
-			cx=canvas.width/6
-			cy=canvas.height*3/4
+			cx=dim/6
+			cy=dim*3/4
 			ctx.beginPath();
 			ctx.lineWidth=2;
 			ctx.arc(cx,cy,radius,0,2*Math.PI);
 			ctx.stroke();
-			ctx.fillText("church", cx-canvas.width/24,cy-40);
 			ctx.font = "20px Arial";
-			ctx.fillText("Matt 16:18-19", cx-60,cy+20);
+			ctx.fillText("church", cx-30,cy-40);
+			ctx.font = "10px Arial";
+			ctx.fillText("Matt 16:18-19", cx-30,cy+10);
 			//drawImage(image, dx, dy, dwidth, dheight)
 			var imageKey = new Image();
          	imageKey.onload = () => {
-				ctx.drawImage(imageKey, canvas.width/6.5-10, cy-30, 30, 15);
+				ctx.drawImage(imageKey, cx-15, cy-20, 30, 15);
          	};
          	imageKey.src = 'https://cdn.pixabay.com/photo/2016/03/31/17/50/brass-1293947_1280.png';
 		//Government
-			gx=canvas.width/2
-			gy=canvas.height*3/4
+			gx=dim/2
+			gy=dim*3/4
 			ctx.beginPath();
 			ctx.lineWidth=2;
 			ctx.arc(gx,gy,radius,0,2*Math.PI);
 			ctx.stroke();
-			ctx.font = "30px Arial";
-			ctx.fillText("Government", gx-canvas.width/12,gy-40);
 			ctx.font = "20px Arial";
-			ctx.fillText("Romans 13:4", gx-60,gy+20);
-			ctx.fillText("Genesis 9:6", gx-60,gy+40);
+			ctx.fillText("Government", gx-50,gy-40);
+			ctx.font = "10px Arial";
+			ctx.fillText("Romans 13:4", gx-30,gy+10);
+			ctx.fillText("Genesis 9:6", gx-30,gy+20);
 			//Had to search the net for a while. It was assumed Government would appreciate an image with a "good" sword but not a "wimpy" sword, not a toy sword.
 			var imageSword = new Image();
          	imageSword.onload = () => {
-				ctx.drawImage(imageSword, canvas.width/2.1, gy-30, 60, 30);
+				ctx.drawImage(imageSword, gx-30, gy-30, 60, 30);
          	};
          	imageSword.src = 'https://cdn.pixabay.com/photo/2018/02/25/19/53/sword-3181584_1280.png';
 		//family
-			fx=canvas.width*5/6
-			fy=canvas.height*3/4
+			fx=dim*5/6
+			fy=dim*3/4
 			ctx.beginPath();
 			ctx.lineWidth=2;
 			ctx.arc(fx,fy,radius,0,2*Math.PI);
 			ctx.stroke();
-			ctx.font = "30px Arial";
-			ctx.fillText("family", fx-canvas.width/24,fy-40);
 			ctx.font = "20px Arial";
-			ctx.fillText("Pr 13:24", fx-40,fy+10);
-			ctx.fillText("1 Tim 3:4", fx-40,fy+30);
-			ctx.fillText("Eph 6:4", fx-40,fy+50);
-			ctx.fillText("Titus 2:5", fx-40,fy+70);
+			ctx.fillText("family", fx-25,fy-40);
+			ctx.font = "10px Arial";
+			ctx.fillText("Pr 13:24", fx-20,fy);
+			ctx.fillText("1 Tim 3:4", fx-20,fy+10);
+			ctx.fillText("Eph 6:4", fx-20,fy+20);
+			ctx.fillText("Titus 2:5", fx-20,fy+30);
 
 			// Draw a filled rectangle
     		ctx.fillStyle = 'brown'; // Set fill color
-    		ctx.fillRect(fx-30, fy-30, 50, 5); // x, y, width, height
+    		ctx.fillRect(fx-25, fy-20, 50, 5); // x, y, width, height
 	
 		//Lines from God symbol to the 3 institution circles
 		ctx.lineWidth=1;
-		var xs=canvas.width/2; //x start
-		var ys=canvas.height/5.8; //y start
+		var xs=dim/2; //x start
+		var ys=dim/5.8; //y start
 
 		ctx.beginPath();
 		ctx.moveTo(xs, ys);
-		ctx.lineTo(cx, cy*0.75);
+		ctx.lineTo(cx, cy - radius);
 		ctx.stroke();
 
 		ctx.beginPath();
 		ctx.moveTo(xs, ys);
-		ctx.lineTo(gx, gy*0.75);
+		ctx.lineTo(gx, gy - radius);
 		ctx.stroke();
 
 		ctx.beginPath();
 		ctx.moveTo(xs, ys);
-		ctx.lineTo(fx, fy*0.75);
+		ctx.lineTo(fx, fy - radius);
 		ctx.stroke();
 
     }
@@ -130,20 +136,18 @@ var ctx = canvas.getContext("2d");
 </script>
 
 </head><body>
-<h1><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB495">AB 495</a></h1><!-- comment about AB495 -->
+<h1><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB495">AB 495 comments v2</a></h1><!-- comment about AB495 -->
 
 <p>This page has some comments about 
 <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB495">Assembly Bill 495.</a><p>
 
 <h2 id="pu">Family institution's ability to pickup their child</h2>
-<p>Will parents who are already present and adequately raising their child be at risk of an unexpected person picking up their child?</p>
+<p>Will parents who are already present and adequately raising their child be at risk of an unexpected person picking up their child? A parent could become anxious if they though their child was missing, even for a short while.</p>
 
 
-<p class="two">Family was one of three institutions on earth along with Government and church according to the diagram below. Each of the institutions ideally has its leader. Would the bill dismantle the leader for a present family institution adequately taking care of their child?</p>
+<p class="two">No family code summary was observed in the <a href="https://govt.westlaw.com/calregs/Index?transitionType=Default&contextData=%28sc.Default%29">California Code of Regulations (CCR)</a> so a diagram was put below to fill in the perceived gap. Family was one of three institutions on earth along with Government and church according to the diagram. Each of the institutions ideally has its leader. The family institution's leader might not want to be disassembled, just like the other institutions do not want any dis-assembly.</p>
 
-The diagram was reconstructed from a <a href="https://www.faithtoyou.com/daniel-32830">video sermon</a> at time 00:22:00. The symbol identifying the church institution was a key, Government was a sword, and family a rod. Scriptures for the diagram were copied to table 1.</p>
-
-<p>No family code summary was observed in the <a href="https://govt.westlaw.com/calregs/Index?transitionType=Default&contextData=%28sc.Default%29">California Code of Regulations (CCR)</a> so the diagram seemed suitable to fill in. Family code did exist in the <a href="https://leginfo.legislature.ca.gov/faces/codes.xhtml">legislative codes</a>, just not observed in the CCR.</p>
+<p>The diagram was reconstructed from a <a href="https://www.faithtoyou.com/daniel-32830">video sermon</a> at time 00:22:00. The symbols identifying each institution were church - key, Government - sword, family - rod. Scriptures for those symbols were copied to table 1.</p>
 
 <br><br>
 
@@ -198,7 +202,11 @@ Canvas not supported
 
 
 <h2 id="existing">Existing codes</h2>
-By the code hierarchy in table 2, article 5.7 indicated the bill could respond to immigration situations. If a immigrant parent was going back to their home country, would California want to check if there was a family rule back in the home country? Assuming some home countries would want the child to stay with his/her parent, is that a good way to help the child receive care? 
+
+<p>The legislative family code already had <a href="https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=FAM&division=8.&title=&part=&chapter=&article=&nodetreepath=10">division 8 for custody of children</a>. Is this a logical place for definitions of relative? If pieces of definitions are scattered across all codes that might not optimally <a href="https://www.plainlanguage.gov/guidelines/organize/">Organize the information.</a> Section <a href="https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=FAM&division=8.&title=&part=1.&chapter=2.&article=">3012.(a)</a> in division 8 already started codes for child custody proceedings in an Immigration situation.</p>
+
+<!-- Removed paragraph and table to reduce total content 
+By the code hierarchy in table 2, article 5.7 indicated the bill could respond to immigration situations.
 
 <table><caption>Table 2 - Bill target location in CA Education Code - EDC</caption>
 <tr>
@@ -230,13 +238,14 @@ By the code hierarchy in table 2, article 5.7 indicated the bill could respond 
 	<td>Pupil Protections Relating to Immigration and Citizenship Status</td>
 	</tr>
 </table>
+-->
 
 
-<p>The legislative family code already had division 8 for custody of children. If custody is under discussion, is this a good place for it? Section <a href="https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=FAM&division=8.&title=&part=1.&chapter=2.&article=">3012. (a)</a> already started codes for child custody proceedings in an Immigration situation.</p>
+<h2 id="localChildServices">Local Child Services reporting</h2>
 
-</p>
-<h2 id="localChildServices">Local Child Services</h2>
-<p>Would local child support services have a harder time reporting? <a href="https://govt.westlaw.com/calregs/Document/I221532E85B6211EC9451000D3A7C4BC3?viewType=FullText&originationContext=documenttoc&transitionType=CategoryPageItem&contextData=(sc.Default)">22 CCR 121120 State Performance Measures</a> had a report for (7) Percent of children for whom paternity has been established. Is it more confusing who the parent is if the custody rules are changed, or family institution modified?</p>
+<p><a href="https://govt.westlaw.com/calregs/Document/I221532E85B6211EC9451000D3A7C4BC3?viewType=FullText&originationContext=documenttoc&transitionType=CategoryPageItem&contextData=(sc.Default)">22 CCR 121120 State Performance Measures</a> had a reports for percent of children for whom paternity has been established and child support. Would local child support services have a harder time reporting if the definition of relative becomes more ambiguous or the code modifies the family institution?</p>
+
+<!-- removed to reduce content
 
 <table><caption>Table 2 - California Code of Regulations (CCR)</caption>
 <tr>
@@ -247,29 +256,34 @@ By the code hierarchy in table 2, article 5.7 indicated the bill could respond 
 	<td>Title 22</td>
 	<td>Social Security</td>
 	</tr>
-
 <tr>
 	<td>Division 13</td>
 	<td>Department of Child Support Services</td>
 	</tr>
-
 <tr>
 	<td>Chapter 11</td>
 	<td>Quality Control</td>
 	</tr>
-
 <tr>
 	<td>Article 1</td>
 	<td>Performance Measures</td>
 	</tr>
-
-
 </table>
-
+-->
 
 <h2 id="pw">Plain writing act</h2>
 
 <p>Are any other States planning a similar bill? Minimizing <a href="https://www.plainlanguage.gov/guidelines/design/minimize-cross-references/">cross-references</a> was encouraged for plain writing, and more consistent verbiage could prevent a lengthy table of cross-references to try and follow each unique bill, if that will occur.</p>
+
+
+<h2 id="efficiency">Judicial efficiency</h2>
+
+<p>The <a href="https://courts.ca.gov/policy-administration/judicial-council/judicial-branch-strategic-plan">Mission of the Judiciary</a> included the word efficiency:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The judiciary will-in a fair, accessible, effective, and <b>efficient</b> manner—resolve disputes arising under the law and will interpret and apply the law consistently, impartially, and independently to protect the rights and liberties guaranteed by the Constitutions of California and the United States.</p>
+
+<p>A review might check procedures like 234.7(f)(1) on <i>limiting assistance with immigration enforcement at public schools, to the fullest extent possible ...</i> to see if they are the most efficient. The judicial web page advertised an <a href="https://courts.ca.gov/policy-administration/invitations-comment">ITC (Invitation to Comment)</a> but AB495 was not observed.</p>
+
+<p>If a immigrant parent was going back to their home country, the home countries rules would not be the California Constitution. However, one of the <a href="https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&division=&title=&part=&chapter=&article=I">ARTICLE I DECLARATION OF RIGHTS</a> was SEC. 31. which prohibited discrimination by national origin in education. If the home country wanted to keep the parent and child together, would the child be discriminated against by preventing that process of their natural origin?</p> 
 
 
 </body></html>
