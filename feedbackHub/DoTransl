@@ -1,4 +1,4 @@
-<script type="text/javascript" defer>
+<script>
 //The bearer token may be limited. Possibly it requires another account and will only run for 1 hour. May not be open sourced if billing needs to be activated.
 
 	async function DoTransl() {

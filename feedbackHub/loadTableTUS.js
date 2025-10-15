@@ -13,7 +13,6 @@ async function translateText(text, targetLanguage) {
 -->
 
 <script>
-//defer till after page is loaded
 
 
 function loadTblTUS(jD) { //jsonData (jD)

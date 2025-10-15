@@ -1,5 +1,4 @@
 <script>
-//defer till after page is loaded
 
 
 //First iteration of tanach.us
