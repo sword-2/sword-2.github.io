@@ -1,4 +1,4 @@
-<script defer>
+<script>
 //The example produced an error for the same directory that would work in the window.showOpenFilePicker()
 //example adapted from https://www.slingacademy.com/article/manage-directories-and-paths-with-the-javascript-file-system-api/
 //async and await keywords removed due to their potential to cause error in FS API.

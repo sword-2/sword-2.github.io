@@ -1,5 +1,5 @@
 <!--
-<script defer>
+<script>
 
 // Function to translate text
 async function translateText(text, targetLanguage) {
@@ -12,7 +12,7 @@ async function translateText(text, targetLanguage) {
 </script>
 -->
 
-<script defer>
+<script>
 //defer till after page is loaded
 
 

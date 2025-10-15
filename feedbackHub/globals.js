@@ -1,4 +1,4 @@
-<script defer>
+<script>
 //example adapted from https://developer.chrome.com/docs/capabilities/web-apis/file-system-access#read-file
 let fileHandle; //used by listeners when selecting file
 

@@ -1,4 +1,4 @@
-<script defer>
+<script>
 //defer till after page is loaded
 
 

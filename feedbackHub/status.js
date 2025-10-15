@@ -1,4 +1,4 @@
-<script defer>
+<script>
 /* Pre-processing of operator request for a KJV bible in Javascript. */
 
 //window.alert('status.js was called.'); //debugging
