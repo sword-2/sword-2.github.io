@@ -1,0 +1,15 @@
+<title>Braft</title>
+
+<!-- meta was recommended by microsoft edge dev tools -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- This part for File System API -->
+<style>
+table, th, td {
+  border: 1px solid black;
+  //border-radius: 10px;
+}
+
+div.solid { border-style: solid; }
+
+</style>

@@ -1,0 +1,44 @@
+<script type="text/javascript" defer>
+//The bearer token may be limited. Possibly it requires another account and will only run for 1 hour. May not be open sourced if billing needs to be activated.
+
+	async function DoTransl() {
+	alert("DoTransl() started");
+/*
+	try {
+		const payload = [];  // Initialize an array to store the second column values
+
+		for (const row of tUsTab.rows) {
+			if (row.cells[1]) {
+				payload.push(row.cells[1].textContent.trim());
+			}
+		}
+   		alert(payload);
+		let url = "https://translation.googleapis.com/v3/projects/<my-project-id>:translateText";
+		let response = await fetch(url, {
+			method: "POST",
+			headers: {
+				"Authorization": "Bearer <my bearer token>",  // Modified
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+			sourceLanguageCode: "he",
+			targetLanguageCode: "en",
+			contents: payload,
+			mimeType: "text/plain",
+			}),
+		});
+		
+		let result = await response.json();
+		const translations = result['translations'];
+		
+		for (let i = 0; i < tUsTab.rows.length; i++) {
+			if (tUsTab.rows[1]) {
+				tUsTab.rows[i].cells[1].innerText = translations[i]["translatedText"];
+			}
+		}
+		} catch (error) {	// Handle the error
+			statusErr.innerHTML += alert("googleTranslate2() caught an error: " + error.message);
+		}
+*/
+}
+</script>

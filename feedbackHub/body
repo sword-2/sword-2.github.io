@@ -1,0 +1,73 @@
+
+
+<!-- inline option while not running server 
+<link rel="stylesheet" href="/?app=bi&appR=html/style.css">
+-->
+
+<!-- Google translate element put in own file -->
+
+<h2 translate="no">Draft</h2>
+<p  translate="no">W3C concepts tested for reading local file. There had been security issues to limit browser access to local files. Several concepts so investigation to determine which were left half way implemented, which operated.</p>
+
+<h2 translate="no">File System API</h2>
+<p translate="no">Manually select a file</p>
+<!-- It might not do hardcoded file path according to a <a href="https://stackoverflow.com/questions/25010019/how-to-pass-hard-coded-file-path-to-file-api">stackoverflow</a>.
+-->
+
+
+<button id="tUSbtn" translate="no">If desired, select file named 01.json</button>
+<br>
+<button id="transl" translate="no">Translate</button>
+
+<table id="tUsTab"><caption translate="no">Tanach US placeholder</caption>
+<tr translate=no>
+	<th>Verse</th>
+	<th>Text</th>
+	</tr>
+</table>
+
+
+<h2 translate="no">File System API for directory</h2>
+
+<p translate="no">Some Hebrew follows - will it translate?</p>
+<p lang="he">בְּרֵאשִׁית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַשּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ׃</p> <!-- implied translate=yes from ancestor -->
+
+<p translate="no">Not observed to operate as expected. Anomalies varied between directory not allowed for selection to user cancellation. different directories than File System API for files. Would be useful to select an array of bible files</p>
+
+<button id="dirBtn" translate="no">Run FS API for directory</button> <!-- onclick="getDirectory" -->
+
+
+<br><hr><br>
+
+<h2 translate="no">More typical query</h2>
+<!-- Operator has to select whether there is network or else similated network. The selected attribute picks which option is default -->
+<label for="statusNet" translate="no">Choose a network status:</label>
+<select name="statusNet" id="statusNet"  translate="no">
+  <optgroup label="Server">
+    <option value="s1">Server and network available</option>
+  </optgroup>
+  <optgroup label="Simulation">
+    <option value="s2" selected>No net or server, simulate instead</option>
+  </optgroup>
+</select>
+
+
+
+<p translate="no">statusFu: to status functions</p>
+<br><div id="statusFu" class="solid" translate="no">-</div>
+
+
+<p translate="no">statusErr: to status errors</p>
+<br><div id="statusErr" class="solid" translate="no">-</div>
+
+
+<br><hr><br>
+
+<!--
+<button onclick="window.open('https://example.com', '_blank')">Open Link</button>
+-->
+<br><br>
+<!-- These were put inline while not operating a server
+<script src="/?app=bi&appR=html/bible.js"></script>
+<script src="/?app=bi&appR=html/listeners.js"></script>
+-->
