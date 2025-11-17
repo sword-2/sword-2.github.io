@@ -3,6 +3,12 @@
 
 main() {
 
+		#debug json errors
+		#	printf 'debugging JSON file'
+		#	file=tmp.json
+		#	cat "$file" | jq
+		#exit 0
+
 	ofile='../04.html'
 
 	#remove old output file, if present
