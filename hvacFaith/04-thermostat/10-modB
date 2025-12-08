@@ -168,7 +168,7 @@
 	<td>No</td>
 	<!-- Summer -->
 		<td>C</td>
-		<td>7:00</td>s
+		<td>7:00</td>
 		<td>15:10</td>
 		<td></td>
 		<td>73</td>
@@ -197,7 +197,7 @@
 <tr>
 	<td>Thu.</td>
 	<td>Awana</td>
-	<td></td>
+	<td>T&T, spark, cubbie</td>
 	<td>No</td>
 	<!-- Summer -->
 		<td>C</td>
@@ -232,10 +232,10 @@
 	<td>Bible study</td>
 	<td>No</td>
 	<!-- Summer -->
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>C</td>
+		<td>15:30</td>
+		<td>20:00</td>
+		<td>72</td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -255,7 +255,7 @@
 		<td></td>
 		<td></td>
 		<td></td>
-	<td></td>
+	<td>Sometimes request for cooler</td>
 	</tr>
 
 <tr>
@@ -293,7 +293,7 @@
 <tr>
 	<td>Sun.</td>
 	<td>Awana</td>
-	<td>Trek</td>
+	<td>Journey, trek</td>
 	<td>No</td>
 	<!-- Summer -->
 		<td>C</td>
@@ -324,5 +324,3 @@
 
 </table>
 </div>
-
-

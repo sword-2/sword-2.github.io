@@ -1,6 +1,7 @@
 //loop thru each table
 function readTables(tables) { 
 	//args - tables - an array of tables available to loop over
+	//alert('debugging - readTables() started');
 	try {
 		for (var i = 0; i < tables.length; i++) {
 		
@@ -32,7 +33,7 @@ function readTable2(tbl) {
 
 		let headers = [];
 
-		// Manually add headers. Extracting deactivated
+		// Manually add headers. Automated extracting deactivated
 			//for (let i = 0; i < rows[0].cells.length; i++) {
 			//	headers.push(rows[0].cells[i].innerText);
 			//}
@@ -82,7 +83,7 @@ function readTable2(tbl) {
 			
 			jsonData.push(capHdr);
 
-		//Extract data rows
+		//Extract data rows, skip header rows, start at 3.
 			for (let i = 3; i < rows.length; i++) {
 				const rowObject = {};
 				const cells = rows[i].cells;
@@ -96,6 +97,6 @@ function readTable2(tbl) {
 
 	} catch (error) {
 		// Code to handle the error
-		alert("readTable2() An error occurred on table:" + error.message);
+		alert("readTable2() An error occurred:" + error.message);
 	}
 } //end function

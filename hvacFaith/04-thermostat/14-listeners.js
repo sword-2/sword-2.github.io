@@ -2,7 +2,7 @@
 	window.addEventListener('load', function () {
 		//readTables(tables, json1);
 		readTables(tables);
-			setSelect();	
+			setSelect(); //load the select pick list with options.	
 	});
 
 //listener to make json file
